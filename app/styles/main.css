@@ -1,6 +1,6 @@
 header {
     margin: auto;
-    height: 80px;
+    height: 150px;
     font-family: Courier;
     background: url("../images/Clouds") no-repeat;
     border-radius: 0;
@@ -9,7 +9,12 @@ header {
 }
 header h1 {
     padding-top: 0;
-    padding-left: 30px;
+    padding-left: 10px;
+    color: white;
+}
+header ul li {
+    display: inline-block;
+    margin-left: 5px;
     color: white;
 }
 
@@ -20,14 +25,14 @@ body {
 }
 
 .hero-unit {
+    background-color: rgba(#eee,0.5);
     background: url("../images/Grass");
-    background-color: rgba(#000,0.5);
-    margin: 5px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 700px;
     font-size: 18px;
     border-radius: 0;
     padding: 40px;
-
+    opacity: 0.8;
 }
 
 .browsehappy {
@@ -47,17 +52,17 @@ body {
     border: 10px solid white;
     position: absolute;
     top: 110px;
-    left: 130px;
+    left: 80px;
 }
 
 ul {
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 ul.social_media {
     text-align: right;
-    margin-right: 35px;
+    margin-right: 10px;
 }
 
 ul.social_media li {
@@ -67,7 +72,6 @@ ul.social_media li {
 ul.social_media a {
     text-decoration: none;
     display: inline-block;
-    line-height: 40px;
 }
 .social_media .LinkedIn,  .social_media .Facebook, .social_media .GitHub, .social_media .Twitter{
     background: no-repeat;
