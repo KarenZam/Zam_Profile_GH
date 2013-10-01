@@ -22,12 +22,11 @@ body {
 }
 
 header {
-    width: 90%;
     margin: auto;
     height: 80px;
     font-family: Courier;
     background: url("../images/Clouds") no-repeat;
-    border-radius: 30px;
+    border-radius: 0;
     opacity: 0.7;
     border: solid 8px white;
 }
@@ -76,10 +75,10 @@ ul.social_media a {
     height: 40px;
     width: 40px;
 }
-.social_media .LinkedIn {background: url("../images/social media LI Draw .png")}
-.social_media .Facebook {background: url("../images/social media FB Draw .png")}
-.social_media .Twitter {background: url("../images/social media Tw Draw .png")}
-.social_media .GitHub {background: url("../images/social media GH Draw .png")}
+.social_media .LinkedIn {background: url("../images/social media LI wood.png")}
+.social_media .Facebook {background: url("../images/social media FB wood.png")}
+.social_media .Twitter {background: url("../images/social media Tw wood.png")}
+.social_media .GitHub {background: url("../images/social media GH wood.png")}
 
 footer {
     clear: both;
@@ -88,8 +87,8 @@ footer {
     font-family: Courier;
     background: black;
     border-radius: 0;
-    opacity: 0.4;
-    background: url("../images/Grass");
+    opacity: 0.6;
+    background: black;
 
 }
 footer p {
