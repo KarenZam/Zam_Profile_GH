@@ -1,14 +1,18 @@
 header {
     margin: left;
+    margin-top: 30px;
     height: 60px;
     font-family: Courier;
     background: rgba(0,0,0,1);
     border-radius: 0;
 }
 header h1, header h3{
+    line-height: 20px;
     padding-top: 0;
-    padding-left: 10px;
     color: white;
+}
+header h1 {
+    padding-left: 90px;
 }
 header ul li {
     display: inline-block;
@@ -25,9 +29,15 @@ header ul li {
     border-radius: 100px;
     border: 10px solid black;
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 5px;
+    left: 10px;
 }
+ul {
+    list-style: none;
+    line-height: 0;
+}
+
+/*-------------------------------------------------------*/
 
 body {
     font-family: Courier;
@@ -39,37 +49,56 @@ h2 h3{
     color: black;
 }
 
-.hero-unit {
-    margin: 20px auto 0 auto;
-    width: 900px;
-    padding: 40px;
+#hero-unit {
+    overflow: hidden;
+    width: 750px;
     border-radius: 0;
+    margin: 40px auto;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
+.cell {
+    float: left;
+    width: 250px;
+    height: 250px;
+}
+.middle_line {
+    float: left;
+    width: 750px;
+    height: 80px;   
 }
 
-td p {
+.cell p {
+    font-size: 15px;
     text-align: left;
     padding: 5px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: left;
+    font-weight:bold;
 }
-
-td {
-    width: 25%;
-    height: 25%;
-    vertical-align: text-top;
+.cell h2 {
     text-align: center;
-    padding: 5px;
+}
+.row {
+    clear: both;
 }
 
-td.w_hub {
-    background: rgba(52, 152, 219,1.0);
-    
+
+#w_hub.cell {
+    /*background: rgba(52, 152, 219,1.0);*/
+    background: url("../images/BW background 2.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
 }
-td.web_dev {
-    background: rgba(22, 160, 133,1.0);
+#w_hub.cell:hover {
+    background: url("../images/BW background hover.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;   
+}
+#web_dev.cell {
+    /*background: rgba(22, 160, 133,1.0);*/
+    background: url("../images/Book background") no-repeat;
+    background-size: cover;
 }
 #ga_logo {
     background: url("../images/GA logo.png") no-repeat;
@@ -81,69 +110,71 @@ td.web_dev {
     margin: 0;
     float: left;
 }
-td.languages {
-    background: rgba(142, 68, 173,1.0);   
-}
-td.project {
-    background: rgba(231, 76, 60,1.0);
-}
-td.project_random {
-    background: url("../images/Flat design desktop.jpg") no-repeat;
-    background-size: 100%;
-    background-position: top;
-}
-td.project_tictactoe {
-    background: url("../images/tic tac toe.jpg") no-repeat;
+#languages.cell {
+    /*background: rgba(142, 68, 173,1.0);   */
+    background: url("../images/coding.jpg") no-repeat;
     background-size: cover;
 }
-td.project_new {
+#project {
+    background: rgba(231, 76, 60,1.0);
+    text-align: center;
+}
+#project_random.cell  {
+    background: url("../images/Flat design desktop.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#project_tictactoe.cell  {
+    background: url("../images/tic tac toe.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#project_new.cell  {
     background: url("../images/Ampoule.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
-ul {
-    list-style: none;
-    line-height: 0;
-}
 
-/*Footer*/
 
-ul.social_media {
+/*--------------Footer--------------------*/
+
+.social_media {
+    clear: both;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-ul.social_media li {
+.social_media li {
     display: inline;
     margin-left: 5px;
 }
-ul.social_media a {
+.social_media a {
     text-decoration: none;
     display: inline-block;
 }
-.social_media .LinkedIn, .social_media .GitHub, .social_media .Twitter{
+.LinkedIn, .GitHub, .Twitter{
+    /*margin-top: 10px;*/
     background: no-repeat;
     background-size: 100%;
     border-radius: 20%;
     height: 50px;
     width: 50px;
 }
-.social_media .LinkedIn {background: url("../images/LinkedIn d1.png")}
-.social_media .Twitter {background: url("../images/Twitter d1.png")}
-.social_media .GitHub {background: url("../images/GitHub d1.png")}
+.LinkedIn {background: url("../images/LinkedIn d1.png")}
+.Twitter {background: url("../images/Twitter d1.png")}
+.GitHub {background: url("../images/GitHub d1.png")}
 
 footer {
     background: rgba(44, 62, 80,1.0);
     clear: both;
-    margin: auto;
     height: 40px;
     font-family: Courier;
     border-radius: 0;
     opacity: 0.8;
 }
 footer p {
-    text-align: right;
-    padding: 15px 50px 0 0;
+    text-align: center;
+    padding: 15px 0 10px 0;
     color: white;
 }
 
@@ -153,3 +184,65 @@ footer p {
     color: #000;
     padding: 0.2em 0;
 }
+
+/*---------------------------------------------------------------*/
+
+@media (max-width: 750px) {
+    header h1{
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 15px;
+    }
+    #hero-unit {
+        width: 500px;
+        border-radius: 0;
+        margin: 40px auto;
+    }
+    .cell h2 {
+        font-size: 18px;
+    }
+    .cell h3 {
+        font-size: 15px;
+    }
+    .cell p {
+        font-size: 13px;
+    }
+    .cell {
+        width: 166px;
+        height: 166px;
+    }
+    #project h2 {
+        font-size: 18px;
+    }
+    .middle_line {
+        float: left;
+        width: 498px;
+        height: 50px;   
+    }
+    #project {
+        background: rgba(231, 76, 60,1.0);
+        text-align: center;
+    }
+    #project_random.cell  {
+        background: url("../images/Flat design desktop.jpg") no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    #project_tictactoe.cell  {
+        background: url("../images/tic tac toe.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #project_new.cell  {
+        background: url("../images/Ampoule.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .LinkedIn, .GitHub, .Twitter{
+        background-size: 90%;
+        border-radius: 20%;
+        height: 25px;
+        width: 25px;
+    }
+}   
