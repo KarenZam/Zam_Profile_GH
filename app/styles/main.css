@@ -17,7 +17,7 @@ header ul li {
 }
 
 #profile-photo {
-    background: url("../images/Karen photo.JPG");
+    background: url("../images/Karen photo.jpg");
     background-size: 92%;
     opacity: 1.0;
     height: 100px;
@@ -90,6 +90,7 @@ td.project {
 td.project_random {
     background: url("../images/Flat design desktop.jpg") no-repeat;
     background-size: 100%;
+    background-position: top;
 }
 td.project_tictactoe {
     background: url("../images/tic tac toe.jpg") no-repeat;
@@ -98,6 +99,7 @@ td.project_tictactoe {
 td.project_new {
     background: url("../images/Ampoule.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
 }
 ul {
     list-style: none;
