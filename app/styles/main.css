@@ -44,7 +44,7 @@ ul {
 /*-------------------------------------------------------*/
 
 body {
-    font-family: Montserrat, Verdana;
+    font-family: Montserrat,Verdana; 
     color: #000;
 }
 h2 {
@@ -81,9 +81,11 @@ h3{
     text-align: left;
     font-weight:bold;
 }
-.cell h2 {
-    font-size: 20px;
+h2 {
+    font-size: 21px;
     text-align: center;
+    color: bold;
+    font-family: Verdana;
 }
 .cell h3 {
     font-size: 17px;
