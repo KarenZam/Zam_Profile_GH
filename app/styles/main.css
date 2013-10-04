@@ -2,7 +2,7 @@ header {
     margin: left;
     margin-top: 30px;
     height: 60px;
-    font-family: Courier;
+    font-family: Verdana;
     background: rgba(0,0,0,1);
     border-radius: 0;
 }
@@ -40,9 +40,8 @@ ul {
 /*-------------------------------------------------------*/
 
 body {
-    font-family: Courier;
+    font-family: Verdana;
     color: black;
-    background: rgba(241, 196, 15,1.0);
 }
 
 h2 h3{
@@ -64,7 +63,7 @@ h2 h3{
 .middle_line {
     float: left;
     width: 750px;
-    height: 80px;   
+    height: 60px;   
 }
 
 .cell p {
@@ -116,7 +115,7 @@ h2 h3{
     background-size: cover;
 }
 #project {
-    background: rgba(231, 76, 60,1.0);
+    background: #FFFF00;
     text-align: center;
 }
 #project_random.cell  {
@@ -168,7 +167,6 @@ footer {
     background: rgba(44, 62, 80,1.0);
     clear: both;
     height: 40px;
-    font-family: Courier;
     border-radius: 0;
     opacity: 0.8;
 }
@@ -193,6 +191,16 @@ footer p {
     }
     header h3 {
         font-size: 15px;
+    }
+    header {
+        width: 750px;
+    }
+    #profile-photo {
+        background-size: 92%;
+        height: 50px;
+        width: 50px;
+        top: 5px;
+        left: 5px;
     }
     #hero-unit {
         width: 500px;
@@ -244,5 +252,8 @@ footer p {
         border-radius: 20%;
         height: 25px;
         width: 25px;
+    }
+    footer {
+        width: 750px;
     }
 }   
