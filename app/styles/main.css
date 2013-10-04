@@ -2,7 +2,6 @@ header {
     margin: left;
     margin-top: 30px;
     height: 60px;
-    font-family: Verdana;
     background: rgba(0,0,0,1);
     border-radius: 0;
     width: 100%;
@@ -10,10 +9,10 @@ header {
 header h1, header h3{
     line-height: 20px;
     padding-top: 0;
-    color: white;
+    color: #ddd;
 }
 header h1 {
-    font-size: 25px;
+    font-size: 28px;
     padding-left: 90px;
 }
 header h3 {
@@ -45,11 +44,14 @@ ul {
 /*-------------------------------------------------------*/
 
 body {
-    font-family: Verdana;
+    font-family: Montserrat, Verdana;
+    color: #000;
+}
+h2 {
     color: black;
 }
 
-h2 h3{
+h3{
     color: black;
 }
 
@@ -70,11 +72,10 @@ h2 h3{
     width: 630px;
     height: 60px;   
 }
-
 .cell p {
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
-    padding: 5px;
+    padding: 5;
     line-height: 20px;
     vertical-align: middle;
     text-align: left;
@@ -94,19 +95,24 @@ h2 h3{
 
 #w_hub.cell {
     /*background: rgba(52, 152, 219,1.0);*/
-    background: url("../images/BW background 2.jpg") no-repeat;
+    background: url("../images/BW background hover.jpg") no-repeat;
     background-size: cover;
     text-align: center;
 }
 #w_hub.cell:hover {
-    background: url("../images/BW background hover.jpg") no-repeat;
+    background: url("../images/BW background.jpg") no-repeat;
     background-size: cover;
     text-align: center;   
 }
 #web_dev.cell {
     /*background: rgba(22, 160, 133,1.0);*/
+    background: url("../images/Book background hover.jpg") no-repeat;
+    background-size: cover;
+}
+#web_dev.cell:hover {
     background: url("../images/Book background.jpg") no-repeat;
     background-size: cover;
+    text-align: center;   
 }
 #ga_logo {
     background: url("../images/GA logo.png") no-repeat;
@@ -118,31 +124,64 @@ h2 h3{
     margin: 0;
     float: left;
 }
+#wdi {
+    font-size: 12px;
+    text-decoration: none;
+}
+#wdi:link {
+    color: #eee;
+}
+#wdi:hover {
+    color: #fff;
+}
+#wdi:active {
+    color: #ddd;
+}
+
 #languages.cell {
     /*background: rgba(142, 68, 173,1.0);   */
+    background: url("../images/coding hover.jpg") no-repeat;
+    background-size: cover;
+}
+#languages.cell:hover {
     background: url("../images/coding.jpg") no-repeat;
     background-size: cover;
 }
 #project {
     background: #FFFF00;
+    /*background: #4e5fff;*/
     text-align: center;
 }
 #project_random.cell  {
+    background: url("../images/Flat design desktop hover.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#project_random.cell:hover  {
     background: url("../images/Flat design desktop.jpg") no-repeat;
     background-size: cover;
     background-position: top;
 }
 #project_tictactoe.cell  {
+    background: url("../images/tic tac toe hover.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#project_tictactoe.cell:hover  {
     background: url("../images/tic tac toe.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 #project_new.cell  {
+    background: url("../images/Ampoule hover.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#project_new.cell:hover {
     background: url("../images/Ampoule.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 
 /*--------------Footer--------------------*/
 
@@ -160,7 +199,7 @@ h2 h3{
     text-decoration: none;
     display: inline-block;
 }
-.LinkedIn, .GitHub, .Twitter{
+#LinkedIn, #GitHub, #Twitter{
     /*margin-top: 10px;*/
     background: no-repeat;
     background-size: 100%;
@@ -168,9 +207,17 @@ h2 h3{
     height: 50px;
     width: 50px;
 }
-.LinkedIn {background: url("../images/LinkedIn d1.png")}
-.Twitter {background: url("../images/Twitter d1.png")}
-.GitHub {background: url("../images/GitHub d1.png")}
+#LinkedIn {background: url("../images/LinkedIn d1.jpg")}
+#Twitter {background: url("../images/Twitter d1.jpg")}
+#GitHub {background: url("../images/GitHub d1.jpg")}
+
+#LinkedIn:hover {background: url("../images/LinkedIn d1 hover.jpg")}
+#Twitter:hover {background: url("../images/Twitter d1 hover.jpg")}
+#GitHub:hover {background: url("../images/GitHub d1 hover.jpg")}
+
+#LinkedIn {background: url("../images/LinkedIn d1.jpg")}
+#Twitter {background: url("../images/Twitter d1.jpg")}
+#GitHub {background: url("../images/GitHub d1.jpg")}
 
 footer {
     background: rgba(44, 62, 80,1.0);
@@ -220,6 +267,9 @@ footer p {
         border-radius: 0;
         margin: 40px auto;
     }
+    .a {
+    font-size: 10px;
+    }
     .cell h2 {
         font-size: 16px;
     }
@@ -236,13 +286,15 @@ footer p {
     #project h2 {
         font-size: 17px;
     }
+    #wdi {
+    font-size: 9px;
+    }
     .middle_line {
         float: left;
         width: 498px;
         height: 50px;   
     }
     #project {
-        background: rgba(231, 76, 60,1.0);
         text-align: center;
     }
     #project_random.cell  {
@@ -260,7 +312,7 @@ footer p {
         background-size: cover;
         background-position: center;
     }
-    .LinkedIn, .GitHub, .Twitter{
+    #LinkedIn, #GitHub, #Twitter{
         background-size: 90%;
         border-radius: 20%;
         height: 25px;
