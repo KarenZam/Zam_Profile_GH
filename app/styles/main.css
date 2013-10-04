@@ -193,7 +193,7 @@ footer p {
         font-size: 15px;
     }
     header {
-        width: 750px;
+        /*width: 750px;*/
     }
     #profile-photo {
         background-size: 92%;
@@ -208,20 +208,20 @@ footer p {
         margin: 40px auto;
     }
     .cell h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .cell h3 {
-        font-size: 15px;
+        font-size: 13px;
     }
     .cell p {
-        font-size: 13px;
+        font-size: 11px;
     }
     .cell {
         width: 166px;
         height: 166px;
     }
     #project h2 {
-        font-size: 18px;
+        font-size: 17px;
     }
     .middle_line {
         float: left;
@@ -254,6 +254,6 @@ footer p {
         width: 25px;
     }
     footer {
-        width: 750px;
+        /*width: 750px;*/
     }
 }   
