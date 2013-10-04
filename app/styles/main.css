@@ -13,7 +13,11 @@ header h1, header h3{
     color: white;
 }
 header h1 {
+    font-size: 25px;
     padding-left: 90px;
+}
+header h3 {
+    font-size: 18px;
 }
 header ul li {
     display: inline-block;
@@ -43,7 +47,6 @@ ul {
 body {
     font-family: Verdana;
     color: black;
-    width: 800px;
 }
 
 h2 h3{
@@ -52,24 +55,24 @@ h2 h3{
 
 #hero-unit {
     overflow: hidden;
-    width: 750px;
+    width: 630px;
     border-radius: 0;
     margin: 40px auto;
 }
 
 .cell {
     float: left;
-    width: 250px;
-    height: 250px;
+    width: 210px;
+    height: 210px;
 }
 .middle_line {
     float: left;
-    width: 750px;
+    width: 630px;
     height: 60px;   
 }
 
 .cell p {
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
     padding: 5px;
     line-height: 20px;
@@ -78,7 +81,11 @@ h2 h3{
     font-weight:bold;
 }
 .cell h2 {
+    font-size: 20px;
     text-align: center;
+}
+.cell h3 {
+    font-size: 17px;
 }
 .row {
     clear: both;
@@ -143,6 +150,7 @@ h2 h3{
     clear: both;
     text-align: center;
     margin-right: 20px;
+    padding: 0px;
 }
 
 .social_media li {
@@ -187,12 +195,15 @@ footer p {
 
 /*---------------------------------------------------------------*/
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     header h1{
         font-size: 20px;
     }
     header h3 {
         font-size: 15px;
+    }
+    body{
+        /*width: 800px;*/
     }
     header {
         width: 100%;
