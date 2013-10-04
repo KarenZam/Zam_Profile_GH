@@ -9,7 +9,8 @@ header {
 header h1, header h3{
     line-height: 20px;
     padding-top: 0;
-    color: #ddd;
+    /*color: #ddd;*/
+    color: #FFFF00;
 }
 header h1 {
     font-size: 28px;
@@ -48,7 +49,7 @@ body {
     color: #000;
 }
 h2 {
-    color: black;
+    color: #000;
 }
 
 h3{
@@ -94,17 +95,16 @@ h2 {
     clear: both;
 }
 
-
 #w_hub.cell {
     /*background: rgba(52, 152, 219,1.0);*/
-    background: url("../images/BW background hover.jpg") no-repeat;
+    background: url("../images/BW background.jpg") no-repeat;
     background-size: cover;
     text-align: center;
 }
 #w_hub.cell:hover {
-    background: url("../images/BW background.jpg") no-repeat;
+    background: url("../images/BW background hover.jpg") no-repeat;
     background-size: cover;
-    text-align: center;   
+    text-align: center;
 }
 #web_dev.cell {
     /*background: rgba(22, 160, 133,1.0);*/
