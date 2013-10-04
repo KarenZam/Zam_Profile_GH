@@ -97,7 +97,7 @@ h2 h3{
 }
 #web_dev.cell {
     /*background: rgba(22, 160, 133,1.0);*/
-    background: url("../images/Book background") no-repeat;
+    background: url("../images/Book background.jpg") no-repeat;
     background-size: cover;
 }
 #ga_logo {
