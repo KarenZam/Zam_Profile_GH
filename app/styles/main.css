@@ -1,16 +1,16 @@
+
 header {
     margin: left;
     margin-top: 30px;
     height: 60px;
     background: rgba(0,0,0,1);
     border-radius: 0;
-    width: 100%;
+    /*width: 100%;*/
 }
 header h1, header h3{
     line-height: 20px;
     padding-top: 0;
-    /*color: #ddd;*/
-    color: #FFFF00;
+    color: #ffff00;
 }
 header h1 {
     font-size: 28px;
@@ -32,7 +32,7 @@ header ul li {
     height: 100px;
     width: 100px;
     border-radius: 100px;
-    border: 10px solid black;
+    border: 10px solid #ffff00;
     position: absolute;
     top: 5px;
     left: 10px;
@@ -43,6 +43,16 @@ ul {
 }
 
 /*-------------------------------------------------------*/
+
+/*.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.block {
+    display: table-row;
+    height: 1px;
+}*/
 
 body {
     font-family: Montserrat,Verdana; 
@@ -61,6 +71,7 @@ h3{
     width: 630px;
     border-radius: 0;
     margin: 40px auto;
+    margin-bottom: 0;
 }
 
 .cell {
@@ -71,7 +82,7 @@ h3{
 .middle_line {
     float: left;
     width: 630px;
-    height: 60px;   
+    height: 50px;   
 }
 .cell p {
     font-size: 14px;
@@ -108,11 +119,11 @@ h2 {
 }
 #web_dev.cell {
     /*background: rgba(22, 160, 133,1.0);*/
-    background: url("../images/Book background hover.jpg") no-repeat;
+    background: url("../images/Book.jpg") no-repeat;
     background-size: cover;
 }
 #web_dev.cell:hover {
-    background: url("../images/Book background.jpg") no-repeat;
+    background: url("../images/Book hover.jpg") no-repeat;
     background-size: cover;
     text-align: center;   
 }
@@ -142,45 +153,48 @@ h2 {
 
 #languages.cell {
     /*background: rgba(142, 68, 173,1.0);   */
-    background: url("../images/coding hover.jpg") no-repeat;
+    background: url("../images/coding.jpg");
     background-size: cover;
 }
 #languages.cell:hover {
-    background: url("../images/coding.jpg") no-repeat;
+    background: url("../images/coding hover.jpg");
     background-size: cover;
 }
 #project {
     background: #FFFF00;
-    /*background: #4e5fff;*/
     text-align: center;
 }
+#project h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 #project_random.cell  {
-    background: url("../images/Flat design desktop hover.jpg") no-repeat;
+    background: url("../images/desktop.jpg") no-repeat;
     background-size: cover;
     background-position: top;
 }
 #project_random.cell:hover  {
-    background: url("../images/Flat design desktop.jpg") no-repeat;
+    background: url("../images/desktop hover.jpg") no-repeat;
     background-size: cover;
     background-position: top;
 }
 #project_tictactoe.cell  {
-    background: url("../images/tic tac toe hover.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#project_tictactoe.cell:hover  {
     background: url("../images/tic tac toe.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
+#project_tictactoe.cell:hover  {
+    background: url("../images/tic tac toe hover.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 #project_new.cell  {
-    background: url("../images/Ampoule hover.jpg") no-repeat;
+    background: url("../images/Ampoule.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 #project_new.cell:hover {
-    background: url("../images/Ampoule.jpg") no-repeat;
+    background: url("../images/Ampoule hover.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -201,10 +215,17 @@ h2 {
     text-decoration: none;
     display: inline-block;
 }
+#Tumblr {
+    background: no-repeat;
+    background-size: cover;
+    border-radius: 25%;
+    height: 50px;
+    width: 50px;   
+}
 #LinkedIn, #GitHub, #Twitter{
     /*margin-top: 10px;*/
-    background: no-repeat;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20%;
     height: 50px;
     width: 50px;
@@ -212,27 +233,30 @@ h2 {
 #LinkedIn {background: url("../images/LinkedIn d1.jpg")}
 #Twitter {background: url("../images/Twitter d1.jpg")}
 #GitHub {background: url("../images/GitHub d1.jpg")}
+#Tumblr {background: url("../images/Tumblr.jpg")}
 
 #LinkedIn:hover {background: url("../images/LinkedIn d1 hover.jpg")}
 #Twitter:hover {background: url("../images/Twitter d1 hover.jpg")}
 #GitHub:hover {background: url("../images/GitHub d1 hover.jpg")}
+#Tumblr:hover {background: url("../images/Tumblr hover.jpg")}
 
-#LinkedIn {background: url("../images/LinkedIn d1.jpg")}
-#Twitter {background: url("../images/Twitter d1.jpg")}
-#GitHub {background: url("../images/GitHub d1.jpg")}
+#LinkedIn:visited, #LinkedIn:active {background: url("../images/LinkedIn d1 visited.jpg")}
+#Twitter:visited, #Twitter:active {background: url("../images/Twitter d1 visited.jpg")}
+#GitHub:visited, #GitHub:active {background: url("../images/GitHub d1 visited.jpg")}
+#Tumblr:visited, #Tumblr:active {background: url("../images/Tumblr visited.jpg")}
 
 footer {
     background: rgba(44, 62, 80,1.0);
     clear: both;
-    height: 40px;
+    height: 20px;
     border-radius: 0;
     opacity: 0.8;
 }
 footer p {
     text-align: center;
-    padding: 15px 0 10px 0;
+    padding: 5px 0 10 0;
     color: white;
-    width: 100%;
+    text-decoration: none;
 }
 
 .browsehappy {
@@ -246,24 +270,32 @@ footer p {
 
 @media (max-width: 800px) {
     header h1{
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: #ff007f;
     }
     header h3 {
-        font-size: 15px;
+        color: #ff007f;
+        font-size: 13px;
+        margin-bottom: 5px;
     }
     body{
         /*width: 800px;*/
     }
     header {
-        width: 100%;
+        background: none;
+        width: auto;
+        height: auto;
     }
     #profile-photo {
         background-size: 92%;
         height: 50px;
         width: 50px;
-        top: 5px;
-        left: 5px;
+        top: 10px;
+        left: 15px;
+        border: 5px solid #ff007f;
     }
     #hero-unit {
         width: 500px;
@@ -295,33 +327,31 @@ footer p {
     .middle_line {
         float: left;
         width: 498px;
-        height: 50px;   
+        height: 40px;   
     }
     #project {
         text-align: center;
+        background: none;
     }
-    #project_random.cell  {
-        background: url("../images/Flat design desktop.jpg") no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    #project_tictactoe.cell  {
-        background: url("../images/tic tac toe.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    #project_new.cell  {
-        background: url("../images/Ampoule.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    #LinkedIn, #GitHub, #Twitter{
+    #LinkedIn, #GitHub, #Twitter, #LinkedIn:hover, #GitHub:hover, #Twitter:hover,
+    #LinkedIn:visited, #GitHub:visited, #Twitter:visited{
         background-size: 90%;
         border-radius: 20%;
         height: 25px;
         width: 25px;
     }
+    #Tumblr, #Tumblr:hover, #Tumblr:visited {
+        background-size: 102%;
+        border-radius: 20%;
+        height: 25px;
+        width: 25px;
+    }
     footer {
-        width: 100%;
+        width: auto;
+        background: none
+    }
+    footer p {
+        text-decoration: underline;
+        color: black;
     }
 }   
