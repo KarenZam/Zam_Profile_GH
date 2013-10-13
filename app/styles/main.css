@@ -1,16 +1,18 @@
+/*HEADER*/
 
 header {
     margin: left;
     margin-top: 30px;
     height: 60px;
-    background: rgba(0,0,0,1);
+    /*background: rgba(255,255,255,1);*/
+    border-bottom: solid 6px black; /*#ffff00*/
     border-radius: 0;
-    /*width: 100%;*/
+    width: 100%;
 }
 header h1, header h3{
     line-height: 20px;
     padding-top: 0;
-    color: #ffff00;
+    color: black;
 }
 header h1 {
     font-size: 28px;
@@ -22,7 +24,7 @@ header h3 {
 header ul li {
     display: inline-block;
     margin-left: 5px;
-    color: white;
+    color: black;
 }
 
 #profile-photo {
@@ -32,7 +34,7 @@ header ul li {
     height: 100px;
     width: 100px;
     border-radius: 100px;
-    border: 10px solid #ffff00;
+    border: 7px solid black;
     position: absolute;
     top: 5px;
     left: 10px;
@@ -42,50 +44,43 @@ ul {
     line-height: 0;
 }
 
-/*-------------------------------------------------------*/
+/*END OF HEADER*/
 
-/*.container {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-.block {
-    display: table-row;
-    height: 1px;
-}*/
+/*http://www.hongkiat.com/blog/css3-image-captions/*/
 
-body {
+html { background-color: white; }
+
+body{
     font-family: Montserrat,Verdana; 
-    color: #000;
-}
-h2 {
-    color: #000;
 }
 
-h3{
-    color: black;
+/*--------------Mainwrapper----------*/
+#mainwrapper {
+  font: 10pt normal Arial, sans-serif;
+  height: 450px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 690px;
 }
 
-#hero-unit {
-    overflow: hidden;
-    width: 630px;
-    border-radius: 0;
-    margin: 40px auto;
-    margin-bottom: 0;
-}
+#mainwrapper .box {  
 
-.cell {
-    float: left;
-    width: 210px;
-    height: 210px;
-}
-.middle_line {
-    float: left;
-    width: 630px;
-    height: 50px;   
-}
-.cell p {
-    font-size: 14px;
+    /*border: 5px solid black;  */
+    cursor: pointer;  
+    height: 182px;  
+    float: left;  
+    margin: 5px;  
+    margin: 0;
+    position: relative;  
+    overflow: hidden;  
+    width: 210px;  
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;  
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;  
+    box-shadow: 1px 1px 1px 1px #ccc;  
+}  
+
+.box p {
+    font-size: 12px;
     text-align: left;
     padding: 5;
     line-height: 20px;
@@ -93,117 +88,83 @@ h3{
     text-align: left;
     font-weight:bold;
 }
-h2 {
-    font-size: 21px;
-    text-align: center;
-    color: bold;
-    font-family: Verdana;
-}
-.cell h3 {
+.box h3 {
     font-size: 17px;
 }
-.row {
-    clear: both;
+  
+#mainwrapper .box img {  
+    -webkit-filter: contrast(150%);
+    position: absolute;  
+    left: 0;  
+    background-repeat:no-repeat;
+    width: auto;
+    height: 100%;
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+}  
+
+#mainwrapper .long-box {
+    /*border: 1px solid white;    */
+    height: 50px;  
+    float: left;  
+    margin: 0; 
+    /*margin: 5px;  */
+    position: relative;   
+    width: 645px;  
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;  
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;  
+    box-shadow: 1px 1px 1px 1px #ccc;  
+    background: white;
 }
 
-#w_hub.cell {
-    /*background: rgba(52, 152, 219,1.0);*/
-    background: url("../images/BW background.jpg") no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-#w_hub.cell:hover {
-    background: url("../images/BW background hover.jpg") no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-#web_dev.cell {
-    /*background: rgba(22, 160, 133,1.0);*/
-    background: url("../images/Book.jpg") no-repeat;
-    background-size: cover;
-}
-#web_dev.cell:hover {
-    background: url("../images/Book hover.jpg") no-repeat;
-    background-size: cover;
-    text-align: center;   
-}
-#ga_logo {
-    background: url("../images/GA logo.png") no-repeat;
-    background-position: right;
-    background-size: 100%;
-    height: 20px;
-    width: 20px;
-    border-radius: 100px;
-    margin: 0;
-    float: left;
-}
-#wdi {
-    font-size: 12px;
-    text-decoration: none;
-}
-#wdi:link {
-    color: #eee;
-}
-#wdi:hover {
-    color: #fff;
-}
-#wdi:active {
-    color: #ddd;
+#mainwrapper .long-box h3 {
+    line-height: 15px;
+    vertical-align: middle;
+    font-size: 20px;
+    color: black;
 }
 
-#languages.cell {
-    /*background: rgba(142, 68, 173,1.0);   */
-    background: url("../images/coding.jpg");
-    background-size: cover;
-}
-#languages.cell:hover {
-    background: url("../images/coding hover.jpg");
-    background-size: cover;
-}
-#project {
-    background: #FFFF00;
-    text-align: center;
-}
-#project h2 {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-#project_random.cell  {
-    background: url("../images/desktop.jpg") no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-#project_random.cell:hover  {
-    background: url("../images/desktop hover.jpg") no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-#project_tictactoe.cell  {
-    background: url("../images/tic tac toe.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#project_tictactoe.cell:hover  {
-    background: url("../images/tic tac toe hover.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#project_new.cell  {
-    background: url("../images/Ampoule.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#project_new.cell:hover {
-    background: url("../images/Ampoule hover.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+/*#box-3 {  
+    -webkit-filter: grayscale(100%) contrast(150%);  
+} */
 
-/*--------------Footer--------------------*/
+/*EFFETCS*/
+
+#mainwrapper .box .caption {  
+    /*background-color: rgba(255,255,51,0.8);  */
+    background-color: rgba(255,255,255,.2);  
+    position: absolute;  
+    color: black;  
+    z-index: 100;  
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+    left: 0;  
+}  
+
+#mainwrapper .box .fade-caption {  
+    opacity: 0.6;  
+    width: 200px;  
+    height: 170px;  
+    text-align: left;  
+    padding: 15px;  
+}  
+
+#mainwrapper .box:hover .fade-caption {  
+    opacity: 0.9;  
+}  
+/*--------------Mainwrapper----------*/
+
+/*Social media buttons*/
 
 .social_media {
-    clear: both;
-    text-align: center;
+    /*clear: both;*/
+    text-align: right;
     margin-right: 20px;
     padding: 0px;
 }
@@ -215,49 +176,43 @@ h2 {
     text-decoration: none;
     display: inline-block;
 }
-#Tumblr {
-    background: no-repeat;
-    background-size: cover;
-    border-radius: 25%;
-    height: 50px;
-    width: 50px;   
-}
-#LinkedIn, #GitHub, #Twitter{
-    /*margin-top: 10px;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20%;
-    height: 50px;
-    width: 50px;
-}
-#LinkedIn {background: url("../images/LinkedIn d1.jpg")}
-#Twitter {background: url("../images/Twitter d1.jpg")}
-#GitHub {background: url("../images/GitHub d1.jpg")}
-#Tumblr {background: url("../images/Tumblr.jpg")}
 
-#LinkedIn:hover {background: url("../images/LinkedIn d1 hover.jpg")}
-#Twitter:hover {background: url("../images/Twitter d1 hover.jpg")}
-#GitHub:hover {background: url("../images/GitHub d1 hover.jpg")}
-#Tumblr:hover {background: url("../images/Tumblr hover.jpg")}
+.social_media #LinkedIn,.social_media #GitHub,.social_media #Twitter,.social_media #Tumblr{
+    left: 0;  
+    background-repeat:no-repeat;
+    background-size: 95%;
+    border-radius: 40%;
+    height: 30px;
+    width: 30px;
+}
+#LinkedIn {background: url("../images/linkedin.jpg")}
+#Twitter {background: url("../images/twitter.jpg")}
+#GitHub {background: url("../images/github.jpg")}
+#Tumblr {background: url("../images/tumblr.jpg")}
 
-#LinkedIn:visited, #LinkedIn:active {background: url("../images/LinkedIn d1 visited.jpg")}
-#Twitter:visited, #Twitter:active {background: url("../images/Twitter d1 visited.jpg")}
-#GitHub:visited, #GitHub:active {background: url("../images/GitHub d1 visited.jpg")}
-#Tumblr:visited, #Tumblr:active {background: url("../images/Tumblr visited.jpg")}
+.social_media #LinkedIn:hover,.social_media #GitHub:hover,
+.social_media #Twitter:hover, .social_media #Tumblr:hover { 
+    -webkit-filter: grayscale(100%);  
+}
+
+/*Footer*/
 
 footer {
-    background: rgba(44, 62, 80,1.0);
     clear: both;
-    height: 20px;
+    height: 30px;
     border-radius: 0;
-    opacity: 0.8;
+    opacity: 1;
+    margin-top: 0;
+    border-top: solid 2px black;
 }
 footer p {
     text-align: center;
-    padding: 5px 0 10 0;
-    color: white;
+    padding: 0 0 10px 0;
+    color: black;
     text-decoration: none;
 }
+
+/*End of Footer*/
 
 .browsehappy {
     margin: 0.2em 0;
@@ -265,93 +220,3 @@ footer p {
     color: #000;
     padding: 0.2em 0;
 }
-
-/*---------------------------------------------------------------*/
-
-@media (max-width: 800px) {
-    header h1{
-        font-size: 18px;
-        padding-left: 30px;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        color: #ff007f;
-    }
-    header h3 {
-        color: #ff007f;
-        font-size: 13px;
-        margin-bottom: 5px;
-    }
-    body{
-        /*width: 800px;*/
-    }
-    header {
-        background: none;
-        width: auto;
-        height: auto;
-    }
-    #profile-photo {
-        background-size: 92%;
-        height: 50px;
-        width: 50px;
-        top: 10px;
-        left: 15px;
-        border: 5px solid #ff007f;
-    }
-    #hero-unit {
-        width: 500px;
-        border-radius: 0;
-        margin: 40px auto;
-    }
-    .a {
-    font-size: 10px;
-    }
-    .cell h2 {
-        font-size: 16px;
-    }
-    .cell h3 {
-        font-size: 13px;
-    }
-    .cell p {
-        font-size: 11px;
-    }
-    .cell {
-        width: 166px;
-        height: 166px;
-    }
-    #project h2 {
-        font-size: 17px;
-    }
-    #wdi {
-    font-size: 9px;
-    }
-    .middle_line {
-        float: left;
-        width: 498px;
-        height: 40px;   
-    }
-    #project {
-        text-align: center;
-        background: none;
-    }
-    #LinkedIn, #GitHub, #Twitter, #LinkedIn:hover, #GitHub:hover, #Twitter:hover,
-    #LinkedIn:visited, #GitHub:visited, #Twitter:visited{
-        background-size: 90%;
-        border-radius: 20%;
-        height: 25px;
-        width: 25px;
-    }
-    #Tumblr, #Tumblr:hover, #Tumblr:visited {
-        background-size: 102%;
-        border-radius: 20%;
-        height: 25px;
-        width: 25px;
-    }
-    footer {
-        width: auto;
-        background: none
-    }
-    footer p {
-        text-decoration: underline;
-        color: black;
-    }
-}   
